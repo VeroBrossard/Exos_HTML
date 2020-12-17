@@ -1,0 +1,18 @@
+
+maj 16h06  du fichier 
+
+codeur-pro.fr › comment-installer-git-sur-windows
+Git est un outils incontournable dans le monde du développement. Nous allons voir ici comment l'installer ...
+	http://codeur-pro.fr/comment-installer-git-sur-windows/
+
+telechargement sur : 
+	http://msysgit.github.io/
+
+Une fois arrivé sur la dernière page, il ne vous reste plus qu’à cliquer sur installer.
+Vous venez alors d’installer les éléments suivants sur votre machine:
+l’outil Git.
+Git bash: terminal qui vous permet d’utiliser git en ligne de commande.
+git gui: interface graphique qui permet de gérer les commits.
+gitk: interface graphique qui permet de gérer l’historique de votre dépôt.
+
+******************
