@@ -1,6 +1,7 @@
 
 
-*************maj du 18/12 sur branche MonCotenu  à 10h00
+
+**** maj  test  fichier dans branche MonContenu 9h57*******
 
 maj 16h35  du fichier 
 j'ajoute une nouvelle ligne 16h40
@@ -11,4 +12,12 @@ Git est un outils incontournable dans le monde du développement. Nous allons vo
 
 telechargement sur : 
 	http://msysgit.github.io/
+
+Une fois arrivé sur la dernière page, il ne vous reste plus qu’à cliquer sur installer.
+Vous venez alors d’installer les éléments suivants sur votre machine:
+l’outil Git.
+Git bash: terminal qui vous permet d’utiliser git en ligne de commande.
+git gui: interface graphique qui permet de gérer les commits.
+gitk: interface graphique qui permet de gérer l’historique de votre dépôt.
+
 ******************
