@@ -1,0 +1,49 @@
+h1
+{
+  color:rgb(132, 0, 255)
+}
+header
+{
+  background: url(images/banniere.jpg) rgb(216, 220, 223)   no-repeat center/90%;
+text-align: center;
+}
+._gras
+{
+  font-weight: bold;
+}
+.plus_gros
+{
+  font-size: 26px;
+}
+/* -----------  images   ----------  */
+.petiteimg
+{
+  width: 35px;
+  height: auto;
+}
+.alignvert
+{
+   vertical-align: bottom;
+}
+.stop_float
+{
+  clear:both
+}
+div{
+  border:yellow 1px solid;
+}
+legend
+{
+  padding: 0px 10px;
+color:blue;
+}
+/*  a voir plus tard 
+p::before { 
+  margin-top:-15px;
+  margin-left:25px;
+  position:absolute;
+  content: "Read this -";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+  */
