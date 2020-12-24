@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Ma 1ere page HTML avec La MANU</title>
+  </head>
+  <body>
+      <header>
+        <h1> Ma 1ere page HTML avec La MANU</h1>
+      </header>
+
+      <section>
+        <p>ceci est mon 1er paragraphe....<br />
+          Ce fichier contient les 7 exercices réalisés le 18/12/2020.<br />
+          Les premiers servant de squelette aux suivants...<br /> 
+        </p>               
+      </section><br /><br />
+      <nav> 
+        <fieldset><legend>Vers les differents exercices: </legend> 
+          <a href="#exo3" >vers exo 3</a><br />
+          <a href="#exo4" >vers exo 4</a><br />
+          <a href="#exo5" >vers exo 5</a><br />
+          <a href="#exo6" >vers exo 6</a><br />
+          <a href="#exo7" >vers exo 7</a><br />
+          </fieldset> 
+      </nav>
+        <section>
+            <h2 id="exo3"> Exo 3 / Ma liste de courses</h2>  
+            <p >Il me faut plusieurs choses:
+              <ul>
+                <li>Une baguette</li>
+                <li>2 kilos de tomates</li>
+                <li>3 litres de lait</li>
+                <li>5 <b>boîtes</b> de chewing-gum</li>
+              </ul>
+              <i>Payer en liquide ou par chèque.</i>
+            </p>
+        </section>
+        <section> 
+            <hr id="exo4"/> 
+            <h2>Exo 4: / Trucs utiles ... </h2>
+            <p >
+              <img class="alignvert petiteimg"  src="http://www.infowebmaster.fr/img/petite-image/bloc-note-stylo.png" alt="petit bloc-note" title="petit bloc-note" />
+              <span class="plus_gros">Tous les petits trucs qui me seront utiles</span>
+              <br />
+              Le site de codacademy est 
+              <a href="codacademy" target="blank_" title="vers codacademy">ici</a><br/>              
+              Pour plein de tutos sympa, il ya aussi 
+              <a href="https://openclassrooms.com/fr" title="vers OpenClassRooms" target="blank_"> OpenClassRoom</a><br />             
+              <a href=" https://ubuntu-fr.org/" title="vers ubuntu"  target="blank_ ">Si je veux devenir un crack sur ubuntu, il me faut la bonne adresse </a><br /><br />              
+            </p>
+        </section>
+        <section>
+            <hr id="exo5"/> <h2>Exo 5: / Tableau ... </h2>
+            <p>
+              <table>
+              <thead>
+                  <tr>
+                    <th colspan="4">Mon compte BNP</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr class="_gras">
+                    <td>Date</td>
+                    <td>Libellé</td>
+                    <td>Crédit</td>
+                    <td>Débit</td>            
+                  </tr>
+                  
+                  <tr>
+                    <td>01/05/2016</td>
+                    <td>Paye</td>
+                    <td>1500</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>01/05/2016</td>
+                    <td>Courses de la semaine</td>
+                    <td>0</td>
+                    <td>152.30</td>
+                  </tr>
+                  <tr>
+                    <td>04/05/2016</td>
+                    <td>Mc Do</td>
+                    <td>0</td>
+                    <td>32.40</td>
+                  </tr>
+                  <tr>
+                    <td>04/05/2016</td>
+                    <td>Loyer</td>
+                    <td>0</td>
+                    <td>700</td>
+                  </tr>
+                  <tr>
+                    <td>05/05/2016</td>
+                    <td>0</td>
+                    <td>39.90</td>
+                    <td>0</td>
+                  </tr>       
+              </tbody>
+              <tfoot>      
+                  <td colspan="2">Solde</td>
+                  <td colspan="2">575.40 €</td>
+              </tfoot>
+              </table>
+            </p>
+          </section>
+          <section>
+          <hr id="exo6"/><h2>Exo 6: /  Formulaire</h2> 
+            <br />
+            <form method="post" action="fichier.php">
+              
+              <fieldset> <legend>Votre identité</legend>
+              <!--  input -->
+              <ol>
+                <li><label for="nom" >NOm </label>
+                <input placeholder="Nom"  type="text" id="nom" name="nomBalise" />
+                </li>
+                <li>  <label for= "nom" >Prénom </label>
+                <input  placeholder="Prénom"  type="text" id="prénom" name="prénomBalise" />
+                </li>
+                <li> 
+                <label for= "nom" >Adresse mail </label>
+                <input  placeholder="Adresse mail "  type="text" id="Adresse_mail " name="mailBalise" />
+                </li>
+            </ol>
+            </fieldset>
+            <br />
+
+            <fieldset><legend>Adresse de Livraison</legend> 
+              <ol>
+                <li> <!--   textarea      -->
+                  <label for= "adresse" > Adresse </label>
+                  <textarea    id= "adresse" name= "adresse" >  </textarea>
+                </li>
+                <li>  <label for= "Code_Postal"> Code Postal</label>
+                  <input  placeholder="Code Postal"  type="text" id="Code_Postal" name="Code_PostalBalise" />
+                </li>
+                <li> 
+                  <label for= "Ville" >Ville</label>
+                  <input  placeholder="Ville "  type="text" id="Ville " name="VilleBalise" />
+                </li>
+              </ol>
+            </fieldset>
+            <br />
+            <fieldset><legend>Informations de règlement</legend> 
+              <ol>
+                <li> Type de carte bancaire :                   
+                    <ul> <! -- input type=  "radio" (bouton radio) liés par name=" " -->
+                      <li> <input type= "radio" id= "visa" name= "visa" value= "visa"  > 
+                      <label for= "visa" >  VISA </label><br>
+                      </li>
+                      <li><input type= "radio" id= "mastercard" name= "mastercard" value= "mastercard"> <label for= "mastercard" >  Mastercard </label><br>
+                        <!--  checked= " checked"  pour préselection (facultatif)  -->
+                      </li>              
+                    </ul> 
+                </li>  
+                <li><label for="numCB" >Numéro de carte : </label>
+                    <input placeholder="Numéro de carte "  type="text" id="numCB" name="numCBBalise" />
+                </li>
+                <li>  <label for= "codeCB" > Code de sécurité:</label>
+                    <input  placeholder="code de sécurité"  type="text" id="codeCB" name="codeCBBalise" />
+                </li>
+                <li> 
+                    <label for= "PropCB" >Nom du titulaire : </label>
+                    <input  placeholder="Nom du titulaire"  type="text" id="PropCB" name="PropCBBalise" />
+                </li>
+              </ol>
+            </fieldset>
+            <p>
+            <!--  boutons cliquables  -->
+              <button type="button"> J'achète ! </button>
+              <!--   
+              <button type="submit" disabled> Envoyer </button>
+              <button type="reset"> Effacer </button>
+              -->
+            </p>
+          </form>
+        </section>
+          <br />
+    <footer> 
+      <hr id="exo7"/> <h2>xo 7... Structure du fichier..voici le résultat !!!</h2> 
+    </footer>
+  </body>
+</html>
