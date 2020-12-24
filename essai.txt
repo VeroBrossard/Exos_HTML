@@ -1,0 +1,23 @@
+creation du fichier essai.txt  
+creation du fichier essai.txt  
+creation du fichier essai.txt  
+creation du fichier essai.txt  
+
+pour tentative sur branch Versoion 1 
+// 24/12/2020  22h10
+
+
+
+****************   création fichier test2 dans branche mon contenu   ****
+*************  maj du 18/12 sur branche MonContenu  à 10h00
+
+maj 16h35  du fichier 
+j'ajoute une nouvelle ligne 16h40
+
+codeur-pro.fr › comment-installer-git-sur-windows
+Git est un outils incontournable dans le monde du développement. Nous allons voir ici comment l'installer ...
+	http://codeur-pro.fr/comment-installer-git-sur-windows/
+
+telechargement sur : 
+	http://msysgit.github.io/
+******************
