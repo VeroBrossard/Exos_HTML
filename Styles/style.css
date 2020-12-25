@@ -34,9 +34,7 @@ div {
   font-weight: bold;
 }
 
-.plus_gros {
-  font-size: 26px;
-}
+
 
 /* -----------  images   ----------  */
 img {
@@ -44,14 +42,6 @@ img {
   margin: 10px 0px 30px 20px;
 }
 
-.petiteimg {
-  width: 85%;
-  height: auto;
-}
-
-.alignvert {
-  vertical-align: bottom;
-}
 
 .stop_float {
   clear: both
