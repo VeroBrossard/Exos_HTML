@@ -1,186 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-      <meta charset="UTF-8">
-      <link rel="stylesheet" href="Styles/style.css">
-      <title>Exo 7  HTML avec La MANU</title>
-  </head>
-  <body>
-      <header>
-        <h1> Ma 1ere page HTML avec La MANU</h1>
-      </header>
 
-      <section>
-        <p>ceci est mon 1er paragraphe....<br />
-          Ce fichier contient les 7 exercices réalisés le 18/12/2020.<br />
-          Les premiers servant de squelette aux suivants...<br /> 
-        </p>               
-      </section><br /><br />
-      <nav> 
-        <fieldset><legend>Vers les differents exercices: </legend> 
-          <a href="#exo3" >vers exo 3</a><br />
-          <a href="#exo4" >vers exo 4</a><br />
-          <a href="#exo5" >vers exo 5</a><br />
-          <a href="#exo6" >vers exo 6</a><br />
-          <a href="#exo7" >vers exo 7</a><br />
-          </fieldset> 
-      </nav>
-        <section>
-            <h2 id="exo3"> Exo 3 / Ma liste de courses</h2>  
-            <p >Il me faut plusieurs choses:
-              <ul>
-                <li>Une baguette</li>
-                <li>2 kilos de tomates</li>
-                <li>3 litres de lait</li>
-                <li>5 <b>boîtes</b> de chewing-gum</li>
-              </ul>
-              <i>Payer en liquide ou par chèque.</i>
-            </p>
-        </section>
-        <section> 
-            <hr id="exo4"/> 
-            <h2>Exo 4: / Trucs utiles ... </h2>
-            <p >
-              <img class="alignvert petiteimg"  src="http://www.infowebmaster.fr/img/petite-image/bloc-note-stylo.png" alt="petit bloc-note" title="petit bloc-note" />
-              <span class="plus_gros">Tous les petits trucs qui me seront utiles</span>
-              <br />
-              Le site de codacademy est 
-              <a href="codacademy" target="blank_" title="vers codacademy">ici</a><br/>              
-              Pour plein de tutos sympa, il ya aussi 
-              <a href="https://openclassrooms.com/fr" title="vers OpenClassRooms" target="blank_"> OpenClassRoom</a><br />             
-              <a href=" https://ubuntu-fr.org/" title="vers ubuntu"  target="blank_ ">Si je veux devenir un crack sur ubuntu, il me faut la bonne adresse </a><br /><br />              
-            </p>
-        </section>
-        <section>
-            <hr id="exo5"/> <h2>Exo 5: / Tableau ... </h2>
-            <p>
-              <table>
-              <thead>
-                  <tr>
-                    <th colspan="4">Mon compte BNP</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr class="_gras">
-                    <td>Date</td>
-                    <td>Libellé</td>
-                    <td>Crédit</td>
-                    <td>Débit</td>            
-                  </tr>
-                  
-                  <tr>
-                    <td>01/05/2016</td>
-                    <td>Paye</td>
-                    <td>1500</td>
-                    <td>0</td>
-                  </tr>
-                  <tr>
-                    <td>01/05/2016</td>
-                    <td>Courses de la semaine</td>
-                    <td>0</td>
-                    <td>152.30</td>
-                  </tr>
-                  <tr>
-                    <td>04/05/2016</td>
-                    <td>Mc Do</td>
-                    <td>0</td>
-                    <td>32.40</td>
-                  </tr>
-                  <tr>
-                    <td>04/05/2016</td>
-                    <td>Loyer</td>
-                    <td>0</td>
-                    <td>700</td>
-                  </tr>
-                  <tr>
-                    <td>05/05/2016</td>
-                    <td>0</td>
-                    <td>39.90</td>
-                    <td>0</td>
-                  </tr>       
-              </tbody>
-              <tfoot>      
-                  <td colspan="2">Solde</td>
-                  <td colspan="2">575.40 €</td>
-              </tfoot>
-              </table>
-            </p>
-          </section>
-          <section>
-          <hr id="exo6"/><h2>Exo 6: /  Formulaire</h2> 
-            <br />
-            <form method="post" action="fichier.php">
-              
-              <fieldset> <legend>Votre identité</legend>
-              <!--  input -->
-              <ol>
-                <li><label for="nom" >NOm </label>
-                <input placeholder="Nom"  type="text" id="nom" name="nomBalise" />
-                </li>
-                <li>  <label for= "nom" >Prénom </label>
-                <input  placeholder="Prénom"  type="text" id="prénom" name="prénomBalise" />
-                </li>
-                <li> 
-                <label for= "nom" >Adresse mail </label>
-                <input  placeholder="Adresse mail "  type="text" id="Adresse_mail " name="mailBalise" />
-                </li>
-            </ol>
-            </fieldset>
-            <br />
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="Styles/style.css" />
+	<title>Exo 7 HTML avec La MANU</title>
+</head>
 
-            <fieldset><legend>Adresse de Livraison</legend> 
-              <ol>
-                <li> <!--   textarea      -->
-                  <label for= "adresse" > Adresse </label>
-                  <textarea    id= "adresse" name= "adresse" >  </textarea>
-                </li>
-                <li>  <label for= "Code_Postal"> Code Postal</label>
-                  <input  placeholder="Code Postal"  type="text" id="Code_Postal" name="Code_PostalBalise" />
-                </li>
-                <li> 
-                  <label for= "Ville" >Ville</label>
-                  <input  placeholder="Ville "  type="text" id="Ville " name="VilleBalise" />
-                </li>
-              </ol>
-            </fieldset>
-            <br />
-            <fieldset><legend>Informations de règlement</legend> 
-              <ol>
-                <li> Type de carte bancaire :                   
-                    <ul> <! -- input type=  "radio" (bouton radio) liés par name=" " -->
-                      <li> <input type= "radio" id= "visa" name= "visa" value= "visa"  > 
-                      <label for= "visa" >  VISA </label><br>
-                      </li>
-                      <li><input type= "radio" id= "mastercard" name= "mastercard" value= "mastercard"> <label for= "mastercard" >  Mastercard </label><br>
-                        <!--  checked= " checked"  pour préselection (facultatif)  -->
-                      </li>              
-                    </ul> 
-                </li>  
-                <li><label for="numCB" >Numéro de carte : </label>
-                    <input placeholder="Numéro de carte "  type="text" id="numCB" name="numCBBalise" />
-                </li>
-                <li>  <label for= "codeCB" > Code de sécurité:</label>
-                    <input  placeholder="code de sécurité"  type="text" id="codeCB" name="codeCBBalise" />
-                </li>
-                <li> 
-                    <label for= "PropCB" >Nom du titulaire : </label>
-                    <input  placeholder="Nom du titulaire"  type="text" id="PropCB" name="PropCBBalise" />
-                </li>
-              </ol>
-            </fieldset>
-            <p>
-            <!--  boutons cliquables  -->
-              <button type="button"> J'achète ! </button>
-              <!--   
-              <button type="submit" disabled> Envoyer </button>
-              <button type="reset"> Effacer </button>
-              -->
-            </p>
-          </form>
-        </section>
-          <br />
-    <footer> 
-      <hr id="exo7"/> <h2>xo 7... Structure du fichier..voici le résultat !!!</h2> 
-    </footer>
-  </body>
+<body id="bodyexo7">
+	<header id="header7">
+		<h1 class="text_gold">Exo 7 HTML avec La MANU, <br />
+			<i>reprise améliorée de l'exercice 2</i></h1> <br />
+		<span id="slogan7" class="text_gold">"Ensemble, c'est plus facile !!! "</span><br /><br />
+	</header>
+
+	<!--  *********   Side bar   ************ -->
+	<aside id="videoBar7" class="text_gold"> <br /><br />
+		<div> Vidéo de Noël 2020/2021 Heidelberger Druckmaschinen AG <br />
+			<iframe class="video7" src="https://www.youtube.com/embed/hf5HpnHQ3eI" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe></div>
+		<div> Joyeux Noël <br /> Carte virtuelle de Noël<br />
+			<iframe class="video7" src="https://www.youtube.com/embed/lg1RTirP4l4" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+		</div>
+		<div>
+			Mariah Carey - All I Want For Christmas Is You (Official Vidéo <br />
+			<iframe class="video7" src="https://www.youtube.com/embed/yXQViqx6GMY" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+		</div>
+		<div>Joyeuses fêtes de noêl<br />
+			<iframe class="video7" src="https://www.youtube.com/embed/0-vvv5fjBSE" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+		</div>
+		<div> Vidéo noël 2020<br />
+			<iframe class="video7" src="https://www.youtube.com/embed/4Lp2fjx7MpQ" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+	</aside>
+	<!--  ************* corps du fichier  **********  -->
+	<section class="section7">
+		<h2 class="text_gold"> C'est bientôt... NOËL!!!</h2>
+		Noël est la fête chrétienne qui célèbre la naissance de Jésus de Nazareth au moment du solstice d'hiver. Pour un
+		grand nombre de personnes, Noël est une fête populaire déconnectée de son fondement religieux.
+	</section>
+	<section class="section7">
+		<h2 class="text_gold"> Historique</h2>
+		<p>
+			Instituée le 25 décembre au IVe siècle et diffusée par la
+			christianisation progressive de l'Europe et du bassin méditerranéen,
+			cette fête de la Nativité prend peu à peu la place de différentes fêtes
+			liées au solstice d'hiver (fête germanique de Yule, fête de Mithra,
+			Saturnales romaines, etc.). .<br />
+			Le Christ étant présenté comme le « soleil
+			de justice » d'une nouvelle ère, sa naissance ouvre l'année liturgique
+			chrétienne lors d'une messe de minuit ritualisée.<br />
+
+			Le récit évangélique de la naissance de Jésus sert de base pendant des
+			siècles à une grande richesse artistique (peinture, sculpture, musique,
+			littérature) que renforce la diffusion populaire de la crèche au xiiie
+			siècle, mais les ferments d'autres traditions liées au solstice ne
+			disparaissent pas totalement..<br />
+			C'est ainsi que le sapin germano-nordique,
+			signe d'une nature vivante malgré l'hiver, est honoré à partir du xvie
+			siècle et gagne même les églises. Le sapin de Noël s'imposera comme
+			symbole de la période des fêtes de fin d'année parallèlement à la
+			déchristianisation de l'Europe à l'époque moderne.<br />
+		</p>
+	</section>
+	<section class="section7">
+		<h2 class="text_gold"> La Tradition</h2>
+		<p>
+			La tradition du père Noël qui se mondialise au xxe siècle complétera
+			cette évolution qui a ajouté une dimension profane à la fête chrétienne,
+			plus orientée vers les enfants, les familles et des cadeaux.<br />
+
+			Aujourd'hui, la fête de Noël s'est fortement sécularisée et n'est plus
+			nécessairement célébrée comme une fête religieuse..<br /> 
+			Le jour de Noël est férié dans de nombreux pays, ce qui permet le regroupement familial autour d'un repas festif et l'échange de cadeaux. Le second jour de Noël (26 décembre) est également un jour férié dans plusieurs pays du nord de l'Europe (Pologne, Royaume-Uni, Pays-Bas, pays scandinaves) ainsi qu'en France, dans les trois départements du Haut-Rhin, du Bas-Rhin et de la Moselle..<br /> 
+			Cela permet également la participation aux messes de Noël pour
+			ceux qui célèbrent la fête sous sa forme religieuse.<br />
+		</p>
+
+	</section>
+	<nav>
+		<!-- ******  barre de navigation liens **************  -->
+		<fieldset id="fieldset7">
+			<legend class="text_gold">Des liens intéressants pour Noël...</legend>
+			<a href="https://www.youtube.com/watch?v=4q1iWaUHsQg">Joyeux Noel 2020 - Jolie carte virtuelle</a><br />
+			<a
+				href="https://www.linternaute.com/sortir/evenement/1421059-repas-de-noel-2020-comment-sublimer-le-menu-des-fetes/">Repas
+				de Noël 2020 : comment sublimer le menu des fêtes ?</a><br />
+			<a
+				href="https://www.lavoixdunord.fr/912696/article/2020-12-24/noel-2020-sera-le-25-decembre-le-plus-froid-depuis-dix-ans-selon-meteo-france">Noël
+				2020 sera le 25 décembre le plus froid depuis dix ans selon
+				Météo France</a><br />
+			<a
+				href="https://www.journaldesfemmes.fr/maman/guide-sorties-en-famille/2571145-noel-covid-fetes-de-fin-d-annee-reveillon-messes-repas-de-noel/">Noël
+				Covid : messes, réveillon en famille, gestes à adopter</a><br />
+		</fieldset>
+	</nav>
+	<footer>
+		<img id="img_7" alt="guilande de Noël" src="images/guirlande.jpg"><br />
+		<h2 class="text_gold" id="h2_7"> Merci Wikipedia !!! <a id="lien7" href="https://fr.wikipedia.org/wiki/No%C3%ABl"
+				title="Noël sur Wikipedia" target="blanck_">Article Noël sur Wikipedia</a></h2> <br />
+	</footer>
+</body>
+
 </html>
