@@ -1,13 +1,11 @@
 html {
-
   background-color: rgb(216, 220, 223);
 }
-
 body {
   width: 900px;
   margin: auto;
   margin-top: 20px;
-  background-color: beige;
+  background-color: white;
 }
 
 h1 {
@@ -19,13 +17,13 @@ header {
   background: url(../images/banniere.jpg) no-repeat;
   background-size: cover;
   text-align: center;
-  border: 3px solid blueviolet;
+  /* border: 3px solid blueviolet; */
   padding-left: 120px;
 }
 
 fieldset,
 div {
-  border: 3px solid orange;
+  /* border: 3px solid orange; */
   padding-left: 50px;
 }
 
@@ -38,7 +36,7 @@ div {
 
 /* -----------  images   ----------  */
 img {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 10px 0px 30px 20px;
 }
 

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Exo 6 HTML avec La MANU</title>
+</head>
+
+<body>
+  <header>
+    <h1> Exo 6 HTML / Formulaire</h1>
+  </header>
+
+  <br />
+  <form method="post" action="fichier.php">
+
+    <fieldset>
+      <legend>Votre identité</legend>
+      <!--  input -->
+      <ol>
+        <li><label for="nom">NOm </label>
+          <input placeholder="Nom" type="text" id="nom" name="nomBalise" />
+        </li>
+        <li> <label for="nom">Prénom </label>
+          <input placeholder="Prénom" type="text" id="prénom" name="prénomBalise" />
+        </li>
+        <li>
+          <label for="nom">Adresse mail </label>
+          <input placeholder="Adresse mail " type="text" id="Adresse_mail " name="mailBalise" />
+        </li>
+      </ol>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend>Adresse de Livraison</legend>
+      <ol>
+        <li>
+          <!--   textarea      -->
+          <label for="adresse"> Adresse </label>
+          <textarea id="adresse" name="adresse">  </textarea>
+        </li>
+        <li> <label for="Code_Postal"> Code Postal</label>
+          <input placeholder="Code Postal" type="text" id="Code_Postal" name="Code_PostalBalise" />
+        </li>
+        <li>
+          <label for="Ville">Ville</label>
+          <input placeholder="Ville " type="text" id="Ville " name="VilleBalise" />
+        </li>
+      </ol>
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Informations de règlement</legend>
+      <ol>
+        <li> Type de carte bancaire :
+          <ul>
+            <! -- input type="radio" (bouton radio) liés par name=" " -->
+              <li> <input type="radio" id="visa" name="visa" value="visa" checked>
+                <label for="visa"> VISA </label><br>
+              </li>
+              <li><input type="radio" id="mastercard" name="mastercard" value="mastercard"> <label for="mastercard">
+                  Mastercard </label><br>
+                <!--  checked= " checked"  pour préselection (facultatif)  -->
+              </li>
+          </ul>
+        </li>
+        <li><label for="numCB">Numéro de carte : </label>
+          <input placeholder="Numéro de carte " type="text" id="numCB" name="numCBBalise" />
+        </li>
+        <li> <label for="codeCB"> Code de sécurité:</label>
+          <input placeholder="code de sécurité" type="text" id="codeCB" name="codeCBBalise" />
+        </li>
+        <li>
+          <label for="PropCB">Nom du titulaire : </label>
+          <input placeholder="Nom du titulaire" type="text" id="PropCB" name="PropCBBalise" />
+        </li>
+      </ol>
+    </fieldset>
+    <p>
+      <!--  boutons cliquables  -->
+      <button type="button"> J'achète ! </button>
+      <!--   
+                <button type="submit" disabled> Envoyer </button>
+                <button type="reset"> Effacer </button>
+                -->
+    </p>
+    <span style="color: orangered"> La structure est bonne, mais il faut que je pense à prendre des noms de variables en anglais et des placeholders plus explicites  !!!</span>
+ 
+  </form>
+  </section><br /><br />
+  <hr />
+  <section style="color: grey;">
+    Correction Charef Sarah <br /><br />
+
+    <form action="" method="post">
+
+      <fieldset id="bloc1">
+
+        <legend id="legend1">Votre identité</legend>
+        <ol>
+
+          <li>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" placeholder="ex. CHAREF" required>
+          </li>
+
+
+          <li>
+            <label for="firstname">Prénom:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="ex. Sarah" required>
+          </li>
+
+
+
+          <li>
+            <label for="email">Adresse mail :</label>
+            <input type="email" id="email" name="email" placeholder="ex. mail@mail.com" required>
+          </li>
+
+
+
+        </ol>
+      </fieldset>
+      </div>
+      <fieldset id="bloc2">
+        <legend id="legend2">Adresse de livraison</legend>
+        <ol>
+
+          <li>
+            <label for="address">Adresse:</label>
+            <textarea id="address" name="address" rows="3" cols="20"> </textarea>
+          </li>
+
+
+          <li>
+            <label for="zipcode">Code postal:</label>
+            <input type="text" id="zipcode" name="zipcode" placeholder="ex. 76600" required>
+          </li>
+
+
+          <li>
+            <label for="city">Ville:</label>
+            <input type="text" id="city" name="city" placeholder="ex. Le Havre" required>
+          </li>
+
+
+        </ol>
+      </fieldset>
+      <fieldset id="bloc3">
+        <legend id="legend3">Information de réglement</legend>
+
+        <ol>
+
+          <li>
+            <div>Type de carte bancaire</div>
+            <div><input type="radio" id="visa" name="cardType" value="VISA" required checked><label
+                for="visa">Visa</label></div>
+            <div><input type="radio" id="mastercard" name="cardType" value="Mastercard" required><label
+                for="mastercard">Mastercard</label></div>
+          </li>
+          <li>
+            <label for="cardNumber">Numéro de carte : </label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="ex. 31XXXXXX" required></li>
+          <li>
+            <label for="securityCode"> Code de sécurité :</label>
+            <input type="text" id="securityCode" name="securityCode" placeholder="ex. 1XX" required></li>
+          <li>
+            <label for="cardOwner"> Nom du titulaire :</label>
+            <input type="text" id="cardOwner" name="cardOwner" placeholder="ex. CHAREF" required></li>
+
+        </ol>
+      </fieldset>
+
+      <input type="submit" name="submitButton" value="J'achète !">
+    </form>
+
+  </section>
+
+</body>
+
+</html>
